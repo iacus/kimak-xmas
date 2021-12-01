@@ -1,0 +1,13 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  &-menu {
+    display: flex;
+  }
+
+  &-item:not(:last-child) {
+    margin-right: .5rem;
+  }
+
+}
