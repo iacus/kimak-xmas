@@ -21,12 +21,12 @@ $text-color:                  $primary;
 $bg-color:                    $secondary;
 
 // Fonts
-$font-family-sans-serif:      "is", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
+$font-family-sans-serif:      "stolzl", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace ;
 $font-family-serif:           Georgia, SSFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace ;
 $font-family-base:            $font-family-sans-serif;
 
-$font-weight-base:            700;
+$font-weight-base:            500;
 $line-height-base:            1.2;
 $font-size-root:              100%;
 $font-size-base:              1rem;
@@ -80,26 +80,6 @@ $my-type-set: map-merge(
       "size": 1.2rem,
       "lh": 1.1
     ),
-    "text-01-nav": (
-      "family": $font-family-sans-serif,
-      "weight": $font-weight-base,
-      "size": 1.2rem,
-      "lh": .9
-    ),
-    "text-01-txts": (
-      "family": $font-family-sans-serif,
-      "weight": $font-weight-base,
-      "size": 1.1rem,
-      "lh": 1.1,
-    ),
-    "text-03": (
-      "family": $font-family-sans-serif,
-      "weight": $font-weight-base,
-      "size": .75rem,
-      "size-sm": .8rem,
-      "size-md": .9rem,
-      "lh": 1.2
-    ),
     "display-01": (
       "family": $font-family-sans-serif,
       "weight": $font-weight-base,
@@ -109,8 +89,10 @@ $my-type-set: map-merge(
     "display-mega": (
       "family": $font-family-sans-serif,
       "weight": $font-weight-base,
-      "size": 30vw,
-      "lh": 1.15,
+      "size": 20vw,
+      "size-md": 10vw,
+      "lh": 1,
+      "tt": uppercase
     ),
     "tiny-title": (
       "family": $font-family-sans-serif,

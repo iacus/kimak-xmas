@@ -9,11 +9,9 @@
     {% include "meta.njk" %}
 </head>
 <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
-    {% iconsprite %}
-    <a href="#main" class="sr-skip-link">skip to main content</a>
 
     <div class="layout" role="document">
-        {% include "header.njk" %}
+        {# {% include "header.njk" %} #}
         <main id="swup" class="main transition-fade" tabindex="-1">
             {{ content | safe }}
         </main>

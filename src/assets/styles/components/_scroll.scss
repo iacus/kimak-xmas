@@ -1,0 +1,37 @@
+[data-scroll-container] {
+
+}
+
+.c-section {
+  height: 100vh;
+}
+
+iframe {
+  // pointer-events: none;
+}
+
+.c-section_infos {
+    padding-top: 45vh;
+    max-width: 320px;
+    position: relative;
+    z-index: 0;
+    margin: 0 auto;
+}
+
+
+
+.c-direction-block {
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.c-direction-block {
+    margin-top: 18.75rem;
+}
+
+.c-direction-block {
+    bottom: -50vh;
+    top: -50vh;
+}

@@ -18,10 +18,10 @@
 //--------------------
 
 @import 'base/normalize';
+@import "base/reboot";
 @import "base/fonts";
 @import "base/type-sets";
 @import "base/base";
-@import "base/reboot";
 @import "base/screenreader";
 @import "base/focus";
 @import "base/layout";
@@ -35,3 +35,7 @@
 @import "components/nav";
 @import "components/header";
 @import "components/footer";
+@import "components/stripe";
+@import "components/scroll";
+
+@import "utils/locomotive-scroll";

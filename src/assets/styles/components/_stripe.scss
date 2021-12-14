@@ -1,0 +1,30 @@
+.stripe {
+    white-space: nowrap;
+    position: absolute;
+
+
+    &-inner {
+      display: block;
+      background-color: $white;
+    }
+
+    &.-one {
+      top: 33%;
+      transform: translateX(-50vw) rotate(26deg);
+    }
+    &.-two {
+      top: 45%;
+    }
+    &.-three {
+      top: 55%;
+      transform: rotate(9deg);
+    }
+    &.-four {
+      top: 68%;
+      transform: translateX(-50vw) rotate(-19deg);
+    }
+    &.-five {
+      top: 63%;
+      transform: translateX(-10vw) rotate(3deg);
+    }
+}
