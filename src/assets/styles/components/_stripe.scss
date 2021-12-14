@@ -2,29 +2,31 @@
     white-space: nowrap;
     position: absolute;
 
-
     &-inner {
       display: block;
       background-color: $white;
+      padding-left: 1vw;
+      padding-right: 1vw;
     }
 
     &.-one {
-      top: 33%;
+      top: 13%;
       transform: translateX(-50vw) rotate(26deg);
     }
     &.-two {
-      top: 45%;
+      top: 25%;
+      transform: translateX(50vw) rotate(9deg);
     }
     &.-three {
-      top: 55%;
-      transform: rotate(9deg);
+      top: 35%;
+      transform: translateX(-50vw) rotate(9deg);
     }
     &.-four {
-      top: 68%;
+      top: 48%;
       transform: translateX(-50vw) rotate(-19deg);
     }
     &.-five {
-      top: 63%;
+      top: 53%;
       transform: translateX(-10vw) rotate(3deg);
     }
 }
