@@ -1,8 +1,8 @@
 [data-scroll-container] {
-  min-height: 1000vh;
+  // min-height: 1000vh;
 }
 
-.c-section {
+.section {
   min-height: 100vh;
 }
 
@@ -10,15 +10,44 @@
   min-height: 20vh;
 }
 
+.space {
+  // height: 50vh;
+}
+
+
+.playlist {
+  max-width: 400px;
+  padding-bottom: 20vh;
+  padding-top: 20vh;
+  margin: 0 auto;
+}
+
+.stripes,.absolute {
+  pointer-events: none !important;
+}
+
+.stripes {
+  padding-bottom: 100vh;
+  // border-top: 10px solid black;
+}
+
 .relative {
     position: relative;
 }
 
+#header {
+  // background-color: blue;
+}
+
 .absolute {
     position: absolute;
+
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    // background-color: blue;
+}
+
+.mw-2 {
+  max-width: 80vw;
 }

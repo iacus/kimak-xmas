@@ -3,7 +3,7 @@
     position: absolute;
 
     &-inner {
-      display: block;
+      display: inline-block;
       background-color: $white;
       padding-left: 1vw;
       padding-right: 1vw;
@@ -11,24 +11,26 @@
 
     &.-one {
       top: 10%;
-      transform: translateX(300vw) rotate(15deg);
+      // transform: translateX(300vw) rotate(15deg);
+      transform: translateX(10vw) rotate(12deg);
       z-index: 6;
     }
     &.-two {
-      top: 30%;
-      transform: translateX(60%) rotate(9deg);
+      top: 20%;
+      transform: rotate(-15deg);
+      // transform: translateX(60%) rotate(9deg);
     }
     &.-three {
-      top: 40%;
-      transform: translateX(-50vw) rotate(9deg);
+      top: 35%;
+      // transform: translateX(-50vw) rotate(9deg);
     }
     &.-four {
       top: 45%;
-      transform: translateX(-100vw) rotate(-19deg);
+      transform: translateX(-25vw) rotate(7deg);
     }
     &.-five {
-      top: 50%;
-      transform: translateX(-320vw) rotate(-3deg);
+      top: 30%;
+      transform: translateX(20vw) rotate(-17deg);
     }
     &.-six {
       top: 55%;
@@ -49,7 +51,13 @@
 
   &.-one {
     top: 10%;
-    transform: translateX(-10vw);
+    transform: translateX(0vw);
+    z-index: -1;
+  }
+
+  &.-two {
+    top: 20%;
+    transform: translateX(80vw);
     z-index: -1;
   }
 }
