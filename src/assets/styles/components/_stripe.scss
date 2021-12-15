@@ -5,6 +5,7 @@
     &-inner {
       display: inline-block;
       background-color: $white;
+      color: $black;
       padding-left: 1vw;
       padding-right: 1vw;
     }
@@ -22,7 +23,7 @@
     }
     &.-three {
       top: 35%;
-      // transform: translateX(-50vw) rotate(9deg);
+      transform: translateX(-10vw) rotate(4deg);
     }
     &.-four {
       top: 45%;
@@ -35,6 +36,10 @@
     &.-six {
       top: 55%;
       transform: translateX(-10vw) rotate(3deg);
+    }
+    &.-seven {
+      bottom: 10%;
+      transform: translateX(-100vw) rotate(3deg);
     }
 }
 
@@ -53,6 +58,7 @@
     top: 10%;
     transform: translateX(0vw);
     z-index: -1;
+
   }
 
   &.-two {

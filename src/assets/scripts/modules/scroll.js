@@ -27,7 +27,7 @@ export default class Single {
     this.scroll = new LocomotiveScroll({
       el: document.querySelector('[data-scroll-container]'),
       smooth: true,
-      // touchMultiplier: 3,
+      touchMultiplier: 2,
       getSpeed: true,
       tablet: {
         smooth: true
@@ -37,25 +37,19 @@ export default class Single {
       },
     })
 
+    this.scroll.on('call', (e) => {
+
+      if (e == 'black-theme') {
+        document.querySelector('body').classList.toggle('black-theme')
+      }
+
+      console.log(e);
+
+    })
+
   }
 
   init() {
     this.startVirtualScroll()
-
-    // if (document.querySelector('[data-scroll-container]')) {
-    //   setTimeout(() => {
-    //     this.startVirtualScroll()
-    //   }, 200);
-    //
-    // }
-    //
-    //
-    // document.addEventListener('swup:pageView', (event) => {
-    //   if (document.querySelector('[data-scroll-container]')) {
-    //     setTimeout(() => {
-    //       this.startVirtualScroll()
-    //     }, 200);
-    //   }
-    // });
   }
 }

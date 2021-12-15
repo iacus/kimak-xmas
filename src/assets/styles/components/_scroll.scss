@@ -1,5 +1,10 @@
-[data-scroll-container] {
-  // min-height: 1000vh;
+body {
+  transition: all 400ms $animation-curve-default;
+}
+
+body.black-theme {
+  background-color: $black;
+  color: $white;
 }
 
 .section {
@@ -10,16 +15,17 @@
   min-height: 20vh;
 }
 
-.space {
-  // height: 50vh;
-}
-
-
 .playlist {
-  max-width: 400px;
-  padding-bottom: 20vh;
-  padding-top: 20vh;
+  max-width: 320px;
+  height: 100vh;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media-breakpoint-up (md) {
+    max-width: 400px;
+  }
 }
 
 .stripes,.absolute {
@@ -28,7 +34,6 @@
 
 .stripes {
   padding-bottom: 100vh;
-  // border-top: 10px solid black;
 }
 
 .relative {
@@ -49,5 +54,16 @@
 }
 
 .mw-2 {
-  max-width: 80vw;
+
+  @include media-breakpoint-up (md) {
+    max-width: 70vw;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.center {
+  margin: 0 auto;
 }
