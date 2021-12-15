@@ -8,4 +8,12 @@
 
     padding: 1rem;
   }
+
+  &-logo {
+    transition: all 500ms $animation-curve-default;
+
+    &:hover {
+      letter-spacing: .4rem;
+    }
+  }
 }

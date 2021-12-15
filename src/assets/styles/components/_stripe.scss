@@ -36,7 +36,7 @@
     }
 }
 
-.circle {
+.shape {
   white-space: nowrap;
   position: absolute;
 
@@ -49,8 +49,8 @@
 
   &.-one {
     top: 10%;
-    transform: translateX(-30vw);
-    z-index: 3;
+    transform: translateX(-10vw);
+    z-index: -1;
   }
 }
 
