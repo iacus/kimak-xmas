@@ -78,6 +78,8 @@
 
   &-inner {
     display: block;
+    width: 20rem;
+    height: 20rem;
   }
 
   &.-one {
@@ -97,6 +99,6 @@
 .bg-red {
   background-color: $red;
   border-radius: 100%;
-  width: 12rem;
-  height: 12rem;
+  width: 10rem;
+  height: 10rem;
 }
