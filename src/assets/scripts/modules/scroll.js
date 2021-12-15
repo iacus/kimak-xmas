@@ -49,7 +49,23 @@ export default class Single {
 
   }
 
+  lockScroll () {
+    const playlist = document.querySelector('.playlist')
+    const stripes = document.querySelector('.stripes')
+
+    playlist.addEventListener('click', (event) => {
+      playlist.classList.add('clicked')
+    });
+    playlist.addEventListener('mouseleave', (event) => {
+      playlist.classList.remove('clicked')
+    });
+    stripes.addEventListener('mouseenter', (event) => {
+      playlist.classList.remove('clicked')
+    });
+  }
+
   init() {
     this.startVirtualScroll()
+    this.lockScroll()
   }
 }

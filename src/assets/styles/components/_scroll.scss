@@ -8,11 +8,20 @@ body.black-theme {
 }
 
 .section {
-  min-height: 100vh;
+  min-height: 125vh;
 }
 
 .section--small {
   min-height: 20vh;
+}
+
+iframe {
+  overflow: hidden;
+  pointer-events:none;
+
+  .clicked & {
+    pointer-events: auto;
+  }
 }
 
 .playlist {
@@ -26,6 +35,7 @@ body.black-theme {
   @include media-breakpoint-up (md) {
     max-width: 400px;
   }
+
 }
 
 .stripes,.absolute {
