@@ -55,9 +55,6 @@
 
   &-inner {
     display: block;
-    background-color: $white;
-    padding-left: 1vw;
-    padding-right: 1vw;
   }
 
   &.-one {
@@ -68,8 +65,31 @@
   }
 
   &.-two {
+    right: 0%;
+    bottom: 10%;
+    // transform: translateX(30vw);
+    z-index: -1;
+  }
+}
+
+.triangles {
+  white-space: nowrap;
+  position: absolute;
+
+  &-inner {
+    display: block;
+  }
+
+  &.-one {
+    top: 0%;
+    transform: translateX(-10vw) translateY(-10vw) rotate(16deg);
+    z-index: -1;
+
+  }
+
+  &.-two {
     top: 20%;
-    transform: translateX(80vw);
+    transform: translateX(80vw) translateY(0vw) rotate(3deg);
     z-index: -1;
   }
 }
@@ -77,6 +97,6 @@
 .bg-red {
   background-color: $red;
   border-radius: 100%;
-  width: 15rem;
-  height: 15rem;
+  width: 12rem;
+  height: 12rem;
 }

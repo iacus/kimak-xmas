@@ -5,6 +5,16 @@ body {
 body.black-theme {
   background-color: $black;
   color: $white;
+
+  ::selection {
+     background: blue;
+     color: $white;
+  }
+
+  ::-moz-selection {
+     background: blue;
+     color: $white;
+  }
 }
 
 .section {
