@@ -3,5 +3,6 @@
     "description": "We wish you an inspiring Christmas. Do great things in 2022!",
     "url": "https://kimak-xmas.netlify.app",
     "lang": "en",
-    "locale": "en_us"
+    "locale": "en_us",
+    "image": "/assets/images/og_image.png"
 }
