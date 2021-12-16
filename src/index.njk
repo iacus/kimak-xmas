@@ -61,16 +61,16 @@ eleventyNavigation:
 
       <div class="playlist" data-scroll>
         <iframe frameborder="0" src="https://open.spotify.com/embed/playlist/2O3sehjXSevyDlFEqL1QgU?utm_source=generator&theme=0" width="100%" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-        <p>
-          <a class="text-01" href="https://open.spotify.com/playlist/2O3sehjXSevyDlFEqL1QgU?si=df7becfd2a334956"> Go to playlist</a>
+        <p class="py-2 text-center">
+          <a class="text-03 letter-motion" target="_blank" rel="noreferrer" href="https://open.spotify.com/playlist/2O3sehjXSevyDlFEqL1QgU?si=df7becfd2a334956">Listen playlist on Spotify</a>
         </p>
       </div>
   </section>
 
-  <section class="section section-text relative" data-scroll-section data-scroll-section-id="section-texts">
+  <section class="section section-text section--high relative" data-scroll-section data-scroll-section-id="section-texts">
     <div data-scroll data-scroll-call="black-theme" data-scroll-repeat id="direction-2">
       <h2 class="display-01 pb-2 text-center">Do Great Things<br>Playlist 2021</h2>
-      <p class="pb-2">Norah Jones · Natalie Cole · Tony Bennett · Amy Winehouse · Ray LaMontagne · Zoe Gotusse · Carly Simon · Leonard Cohen · Neil Frances · George F. Handel · Frank Sinatra · Julio Iglesias · Steve Wonder · Elvis Presley · Ella Fitzgerald · Louis Amstrong · Maria Dolores Pradera · Bebo Valdés · Nat Kink Cole · Ele · Phil Wickman · Morgan · Dellafuente · C.Tangana · Paul Simon · Antonio Vivaldi · Michael Bublé · Suzanne Vega · Natalie Merchant · Jack Johnson · John Mayer & Katy Perry · Richard Hawley</p>
+      <p class="pb-2 text-center">Norah Jones · Natalie Cole · Tony Bennett · Amy Winehouse · Ray LaMontagne · Zoe Gotusse · Carly Simon · Leonard Cohen · Neil Frances · George F. Handel · Frank Sinatra · Julio Iglesias · Steve Wonder · Elvis Presley · Ella Fitzgerald · Louis Amstrong · Maria Dolores Pradera · Bebo Valdés · Nat Kink Cole · Ele · Phil Wickman · Morgan · Dellafuente · C.Tangana · Paul Simon · Antonio Vivaldi · Michael Bublé · Suzanne Vega · Natalie Merchant · Jack Johnson · John Mayer & Katy Perry · Richard Hawley</p>
       <h3 class="display-02 pb-2 center text-center mw-2">We wish you an inspiring Christmas.<br> Do great things in 2022!</h3>
     </div>
     <div data-scroll>
@@ -91,10 +91,28 @@ eleventyNavigation:
     </div>
   </section>
 
+  <section class="section section-share section--medium" data-scroll-section>
+    <div class="center text-center" data-scroll>
+      <ul class="social-items">
+        {% for item in nav.navSocial %}
+          {% if item.dataAction %}
+            <li class="text-03 pb-1">
+              <a class="letter-motion" href="{{item.url}}" target="_blank" data-action="{{item.dataAction}}" rel="noreferrer">{{item.title}}</a>
+            </li>
+          {% else %}
+            <li class="text-03 pb-1">
+              <a class="letter-motion" href="{{item.url}}" target="_blank"  rel="noreferrer">{{item.title}}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
   <section class="section section-footer section--small" data-scroll-section>
     <div class="center text-center" data-scroll>
       <p class="text-03 ">
-        <a class="footer-logo" href="https://www.kimak.com/" target="_blank" rel="noreferrer">KIMAK</a>
+        <a class="footer-logo letter-motion" href="https://www.kimak.com/" target="_blank" rel="noreferrer">KIMAK</a>
       </p>
     </div>
   </section>

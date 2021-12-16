@@ -6,5 +6,19 @@
     {
       "title": "Cookie Advice",
       "url": "/cookie-advice"
+    }],
+    "navSocial": [
+      {
+        "title": "Share it with Whatsapp",
+        "url": "https://wa.me/send?text=Visit https://kimak-xmas.netlify.app",
+        "dataAction": "share/whatsapp/share"
+      },
+      {
+      "title": "Follow us on Linkedin",
+      "url": "https://www.linkedin.com/company/kimak"
+    },
+    {
+      "title": "Follow us on Instagram",
+      "url": "https://www.instagram.com/kimak_design/"
     }]
 }

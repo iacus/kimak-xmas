@@ -9,11 +9,12 @@
     padding: 1rem;
   }
 
-  &-logo {
-    transition: all 500ms $animation-curve-default;
+}
 
-    &:hover {
-      letter-spacing: .4rem;
-    }
+.letter-motion {
+  transition: letter-spacing 400ms $animation-curve-default;
+
+  &:hover {
+    letter-spacing: .4rem;
   }
 }

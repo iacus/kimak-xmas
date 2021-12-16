@@ -21,6 +21,14 @@ body.black-theme {
   min-height: 125vh;
 }
 
+.section--high {
+  min-height: 100vh;
+}
+
+.section--medium {
+  min-height: 50vh;
+}
+
 .section--small {
   min-height: 20vh;
 }
@@ -35,7 +43,7 @@ iframe {
 }
 
 .playlist {
-  max-width: 320px;
+
   height: 100vh;
   margin: 0 auto;
   display: flex;
@@ -43,8 +51,12 @@ iframe {
   justify-content: center;
   align-items: center;
 
-  @include media-breakpoint-up (md) {
-    max-width: 400px;
+  iframe {
+    max-width: 320px;
+
+    @include media-breakpoint-up (md) {
+      max-width: 400px;
+    }
   }
 
 }
@@ -61,13 +73,8 @@ iframe {
     position: relative;
 }
 
-#header {
-  // background-color: blue;
-}
-
 .absolute {
     position: absolute;
-
     top: 0;
     bottom: 0;
     left: 0;
@@ -75,7 +82,6 @@ iframe {
 }
 
 .mw-2 {
-
   @include media-breakpoint-up (md) {
     max-width: 70vw;
   }
