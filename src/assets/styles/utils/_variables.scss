@@ -77,7 +77,9 @@ $my-type-set: map-merge(
     "text-01": (
       "family": $font-family-sans-serif,
       "weight": $font-weight-base,
-      "size": 1.2rem,
+      "size": 1rem,
+      "size-md": 1.5rem,
+      "size-lg": 1rem,
       "lh": 1.1
     ),
     "text-03": (
@@ -87,23 +89,37 @@ $my-type-set: map-merge(
       "lh": 1.1,
       "ls": .2rem
     ),
+    "text-04": (
+      "family": $font-family-sans-serif,
+      "weight": $font-weight-base,
+      "size": 1.5rem,
+      "size-lg": 1.25rem,
+      "size-xxl": 1rem,
+      "lh": 1.1,
+      "ls": .2rem
+    ),
     "display-01": (
       "family": $font-family-sans-serif,
       "weight": $font-weight-base,
       "size": 2.25rem,
+      "size-md": 3.25rem,
+      "size-lg": 2rem,
       "lh": 1.15,
     ),
     "display-02": (
       "family": $font-family-sans-serif,
       "weight": $font-weight-base,
       "size": 1.6rem,
+      "size-md": 2.2rem,
+      "size-lg": 1.2rem,
       "lh": 1.15,
     ),
     "display-mega": (
       "family": $font-family-sans-serif,
       "weight": $font-weight-base,
       "size": 20vw,
-      "size-md": 10vw,
+      "size-md": 18vw,
+      "size-lg": 10vw,
       "lh": 1,
       "tt": uppercase
     ),

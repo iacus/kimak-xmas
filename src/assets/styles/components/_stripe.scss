@@ -17,35 +17,61 @@
       z-index: 6;
     }
     &.-two {
-      top: 20%;
+      top: 5%;
       transform: rotate(-15deg);
+      z-index: -1;
       // transform: translateX(60%) rotate(9deg);
+      @include media-breakpoint-up (md) {
+        top: 10%;
+      }
     }
     &.-three {
-      top: 35%;
+      top: 25%;
       transform: translateX(-10vw) rotate(4deg);
+
+      @include media-breakpoint-up (md) {
+        top: 30%;
+      }
     }
     &.-four {
-      top: 45%;
+      top: 40%;
       transform: translateX(-5vw) rotate(-7deg);
       z-index: 9;
+
+      @include media-breakpoint-up (md) {
+        top: 45%;
+      }
     }
     &.-five {
       top: 30%;
-      transform: translateX(20vw) rotate(-17deg);
+      transform: translateX(5vw) rotate(-17deg);
+
+      @include media-breakpoint-up (md) {
+        transform: translateX(20vw) rotate(-17deg);
+      }
     }
     &.-six {
       top: 55%;
       transform: translateX(-10vw) rotate(3deg);
     }
     &.-seven {
-      bottom: 10%;
-      transform: translateX(-100vw) rotate(-3deg);
+      top: 80%;
+      transform: translateX(-140vw) rotate(-3deg);
+      z-index: 4;
+
+      @include media-breakpoint-up (md) {
+        top: 80%;
+        transform: translateX(-100vw) rotate(-3deg);
+      }
     }
     &.-eight {
-      top: 45%;
+      top: 35%;
       transform: translateX(-5vw) rotate(-17deg);
       z-index: 10;
+
+      @include media-breakpoint-up (md) {
+        top: 45%;
+      }
     }
 }
 
@@ -68,11 +94,17 @@
     right: 0%;
     bottom: 10%;
     // transform: translateX(30vw);
-    z-index: -1;
+    z-index: 3;
   }
 }
 
 .triangles {
+  position: absolute;
+  width: 100%;
+  top: 10%;
+}
+
+.triangle {
   white-space: nowrap;
   position: absolute;
 

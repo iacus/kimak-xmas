@@ -27,7 +27,7 @@ export default class Single {
     this.scroll = new LocomotiveScroll({
       el: document.querySelector('[data-scroll-container]'),
       smooth: true,
-      touchMultiplier: 2,
+      touchMultiplier: 3,
       getSpeed: true,
       tablet: {
         smooth: true
@@ -72,9 +72,15 @@ export default class Single {
   init() {
 
 
-    setTimeout(() => {
-      this.startVirtualScroll()
-      this.lockScroll()
-    }, 400);
+    // setTimeout(() => {
+    //   this.startVirtualScroll()
+    //   this.lockScroll()
+    // }, 400);
+    console.log('antes');
+    window.addEventListener('load', (event) => {
+    console.log('The page has fully loaded');
+    this.startVirtualScroll()
+    this.lockScroll()
+    });
   }
 }

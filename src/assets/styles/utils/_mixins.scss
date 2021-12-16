@@ -197,3 +197,10 @@ $max_font: 24px;
     background-color: transparent;
     -webkit-appearance: none;
 }
+
+@mixin center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

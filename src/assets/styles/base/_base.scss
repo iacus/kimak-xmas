@@ -23,7 +23,8 @@
 
 html {
   box-sizing: border-box;
-  font-size: clamp(.9rem, 2vw, 3.5rem);
+  font-size: 15px;
+  font-size: clamp(.9rem, 2vw, 7rem);
   height: auto;
 }
 
