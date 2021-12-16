@@ -39,14 +39,15 @@ export default class Single {
 
     this.scroll.on('call', (e,a,y) => {
       const body = document.querySelector('body')
-console.log(a);
-      console.log(y);
+
       if (e == 'black-theme' && !body.classList.contains('black-theme')) {
         body.classList.add('black-theme')
-      } else if (y.progress <= 0) {
+      } else if (e == 'black-theme' && y.progress <= 0) {
         body.classList.remove('black-theme')
       }
 
+      console.log(a);
+      console.log(y);
       console.log(e);
 
     })
