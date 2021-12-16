@@ -61,14 +61,14 @@ eleventyNavigation:
 
       <div class="playlist" data-scroll>
         <iframe frameborder="0" src="https://open.spotify.com/embed/playlist/2O3sehjXSevyDlFEqL1QgU?utm_source=generator&theme=0" width="100%" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-        <p class="py-2 text-center">
-          <a class="text-03 letter-motion" target="_blank" rel="noreferrer" href="https://open.spotify.com/playlist/2O3sehjXSevyDlFEqL1QgU?si=df7becfd2a334956">Listen playlist on Spotify</a>
+        <p class="py-2 text-center ">
+          <a class="text-03 letter-motion call" target="_blank" rel="noreferrer" href="https://open.spotify.com/playlist/2O3sehjXSevyDlFEqL1QgU?si=df7becfd2a334956">Listen playlist on Spotify</a>
         </p>
       </div>
   </section>
 
   <section class="section section-text section--high relative" data-scroll-section data-scroll-section-id="section-texts">
-    <div data-scroll data-scroll-call="black-theme" data-scroll-position="top" data-scroll-repeat id="direction-2">
+    <div data-scroll data-scroll-call="black-theme" data-scroll-repeat id="direction-2">
       <h2 class="display-01 pb-2 text-center">Do Great Things<br>Playlist 2021</h2>
       <p class="pb-2 text-center">Norah Jones · Natalie Cole · Tony Bennett · Amy Winehouse · Ray LaMontagne · Zoe Gotusse · Carly Simon · Leonard Cohen · Neil Frances · George F. Handel · Frank Sinatra · Julio Iglesias · Steve Wonder · Elvis Presley · Ella Fitzgerald · Louis Amstrong · Maria Dolores Pradera · Bebo Valdés · Nat Kink Cole · Ele · Phil Wickman · Morgan · Dellafuente · C.Tangana · Paul Simon · Antonio Vivaldi · Michael Bublé · Suzanne Vega · Natalie Merchant · Jack Johnson · John Mayer & Katy Perry · Richard Hawley</p>
       <h3 class="display-02 pb-2 center text-center mw-2">We wish you an inspiring Christmas.<br> Do great things in 2022!</h3>
@@ -92,20 +92,36 @@ eleventyNavigation:
   </section>
 
   <section class="section section-share section--medium" data-scroll-section>
-    <div class="center text-center" data-scroll>
+    <div class="center text-center" data-scroll id="direction-3">
       <ul class="social-items">
         {% for item in nav.navSocial %}
           {% if item.dataAction %}
             <li class="text-03 pb-1">
-              <a class="letter-motion" href="{{item.url}}" target="_blank" data-action="{{item.dataAction}}" rel="noreferrer">{{item.title}}</a>
+              <a class="letter-motion call" href="{{item.url}}" target="_blank" data-action="{{item.dataAction}}" rel="noreferrer">{{item.title}}</a>
             </li>
           {% else %}
             <li class="text-03 pb-1">
-              <a class="letter-motion" href="{{item.url}}" target="_blank"  rel="noreferrer">{{item.title}}</a>
+              <a class="letter-motion call" href="{{item.url}}" target="_blank"  rel="noreferrer">{{item.title}}</a>
             </li>
           {% endif %}
         {% endfor %}
       </ul>
+    </div>
+    <div data-scroll>
+      <div class="triangles -two">
+        <span class="triangles-inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2" data-scroll-target="#direction-3" data-scroll-delay="0.1">
+          <svg width="100%" height="100%" viewBox="0 0 440 550" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M439.172 0.261511L370.011 549.674L0.275139 337.911L439.172 0.261511Z" fill="#FE1832"/>
+          </svg>
+        </span>
+      </div>
+      <div class="triangles -one">
+        <span class="triangles-inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="4" data-scroll-target="#direction-3" data-scroll-delay="0.6">
+          <svg width="100%" height="100%" viewBox="0 0 446 549" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.622651 0.0892322L445.018 330.468L78.8187 548.289L0.622651 0.0892322Z" fill="#FE1832"/>
+          </svg>
+        </span>
+      </div>
     </div>
   </section>
 

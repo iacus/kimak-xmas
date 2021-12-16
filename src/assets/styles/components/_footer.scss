@@ -18,3 +18,14 @@
     letter-spacing: .4rem;
   }
 }
+
+.call {
+  background-color: blue;
+  color: $white;
+  padding-left: .25rem;
+  padding-right: .25rem;
+
+  &:hover {
+    color: $white
+  }
+}
