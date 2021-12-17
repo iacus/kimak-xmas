@@ -10,8 +10,8 @@
     "navSocial": [
       {
         "title": "Share it with Whatsapp",
-        "url": "https://wa.me/send?text=Kimak wish you an inspiring Christmas! https://music.kimak.com",
-        "dataAction": "share/whatsapp/share"
+        "url": "whatsapp://send?text=Kimak wish you an inspiring Christmas! https://music.kimak.com",
+        "dataAction-": "share/whatsapp/share"
       },
       {
       "title": "Follow us on Linkedin",
