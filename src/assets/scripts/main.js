@@ -4,18 +4,15 @@
 import viewportUnitsBuggyfill from 'viewport-units-buggyfill'
 import Debug from './modules/debug'
 import Checks from './modules/checks'
-import PageLoader from './modules/loader'
 import Scroll from './modules/scroll'
-// import Slider from './slider/slider'
 
 viewportUnitsBuggyfill.init()
 
 const initFun = () => {
   new Debug().init()
   new Checks().init()
-  new PageLoader().init()
+  // new PageLoader().init()
   new Scroll().init()
-  // new Slider().init()
 }
 
 

@@ -15,14 +15,19 @@
         <main id="swup" class="main transition-fade" tabindex="-1">
             {{ content | safe }}
         </main>
-        {% include "footer.njk" %}
+        {# {% include "footer.njk" %} #}
     </div>
 
     <script type="text/javascript" src="{{ '/assets/scripts/main.js' | url }}"></script>
     <script type="text/javascript">
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/serviceworker.js')
-        }
+        // if ('serviceWorker' in navigator) {
+        //     navigator.serviceWorker.register('/serviceworker.js')
+        // }
+
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+         for(let registration of registrations) {
+          registration.unregister()
+        } })
     </script>
 </body>
 </html>
