@@ -78,10 +78,13 @@ export default class Single {
       this.callEvent()
     }, 1000);
 
-    window.addEventListener('DOMContentLoaded', (event) => {
-    console.log('The page has fully loaded');
+    // window.addEventListener('DOMContentLoaded', (event) => {
+    // console.log('The page has fully loaded');
+    // this.startVirtualScroll()
+    // this.lockScroll()
+    // });
+
     this.startVirtualScroll()
     this.lockScroll()
-    });
   }
 }
