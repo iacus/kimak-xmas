@@ -1,8 +1,10 @@
 {
-    "title": "KIMAK XMAS",
-    "description": "We wish you an inspiring Christmas. Do great things in 2022!",
+    "title": "KIMAK · Chill & Lounge",
+    "description": "KIMAK Summer vibes 2022",
     "url": "https://music.kimak.com",
     "lang": "en",
     "locale": "en_us",
-    "image": "/assets/images/og_image.png"
+    "image": "/assets/images/og_image.png",
+    "playlistEmbed": "https://open.spotify.com/embed/playlist/6PyKBqHjcG48Vpu2hMkcrR?utm_source=generator&theme=0",
+    "playlistLink": "https://open.spotify.com/playlist/6PyKBqHjcG48Vpu2hMkcrR?si=a9a987873bde4855"
 }
