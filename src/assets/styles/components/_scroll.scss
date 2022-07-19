@@ -1,10 +1,11 @@
 body {
+  background-color: $yellow;
   transition: all 400ms $animation-curve-default;
 }
 
 body.black-theme {
-  background-color: $black;
-  color: $white;
+  background-color: $blue;
+  color: $black;
 
   ::selection {
      background: blue;
@@ -104,4 +105,8 @@ iframe {
 
 .center {
   margin: 0 auto;
+}
+
+.bg-triangle {
+  fill: $yellow;
 }

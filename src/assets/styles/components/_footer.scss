@@ -20,12 +20,12 @@
 }
 
 .call {
-  background-color: blue;
-  color: $white;
+  background-color: $yellow;
+  color: $black;
   padding-left: .25rem;
   padding-right: .25rem;
 
   &:hover {
-    color: $white
+    color: $black
   }
 }

@@ -1,24 +1,30 @@
 $gold:                        #a99278;
 $black:                       #000000;
 $white:                       #FFFFFF;
-$blue:                        #007bff;
 $indigo:                      #6610f2;
 $purple:                      #6f42c1;
 $pink:                        #e83e8c;
 $red:                         #FE1832;
 $orange:                      #fd7e14;
-$yellow:                      #ffc107;
-$green:                       #01FE6D;
 $cyan:                        #17a2b8;
 $gray-dark:                   #373a3c;
 $gray-light:                  #DDDDDD;
 
+$blue:                        #3AB4F2;
+$yellow:                      #F2DF3A;
+$green:                       #27AE60;
+
 $primary:                     $black;
-$secondary:                   $white;
+$secondary:                   $yellow;
 $accent:                      $yellow;
 
-$text-color:                  $primary;
+$text-color:                  $blue;
 $bg-color:                    $secondary;
+
+$text-stripe: $black;
+$bg-stripe: $white;
+
+
 
 // Fonts
 $font-family-sans-serif:      "stolzl", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;

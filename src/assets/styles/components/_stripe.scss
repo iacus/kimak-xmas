@@ -4,8 +4,8 @@
 
     &-inner {
       display: inline-block;
-      background-color: $white;
-      color: $black;
+      background-color: $bg-stripe;
+      color: $text-stripe;
       padding-left: 1vw;
       padding-right: 1vw;
     }
@@ -129,7 +129,7 @@
 }
 
 .bg-red {
-  background-color: $red;
+  background-color: $blue;
   border-radius: 100%;
   width: 10rem;
   height: 10rem;
