@@ -73,6 +73,27 @@
         top: 45%;
       }
     }
+    &.-nine {
+      top: 35%;
+      transform: translateX(-2vw) rotate(0);
+      z-index: 10;
+
+      .stripe-inner {
+        display: inline-block;
+        background-color: $text-stripe;
+        color: $bg-stripe;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        padding-bottom: .5vw;
+        padding-top: .5vw;
+      }
+
+      @include media-breakpoint-up (md) {
+        top: 35%;
+        transform: translateX(15vw) rotate(0);
+      }
+
+    }
 }
 
 .shape {
@@ -95,6 +116,17 @@
     bottom: 10%;
     // transform: translateX(30vw);
     z-index: 3;
+  }
+
+  &.-three {
+    right: 0%;
+    bottom: 5%;
+    // transform: translateX(30vw);
+    z-index: 1000;
+
+    path {
+      fill: $blue;
+    }
   }
 }
 

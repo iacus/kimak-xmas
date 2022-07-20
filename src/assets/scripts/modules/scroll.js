@@ -77,9 +77,8 @@ export default class Single {
     setTimeout(() => {
       this.startVirtualScroll()
       this.lockScroll()
-
       this.callEvent()
-    }, 200);
+    }, 1000);
 
     // window.addEventListener('DOMContentLoaded', (event) => {
     // console.log('The page has fully loaded');

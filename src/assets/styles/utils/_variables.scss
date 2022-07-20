@@ -47,7 +47,7 @@ $spacer: 1rem;
 $zindex-sections:                        1040;
 $zindex-newsletter:                      1050;
 $zindex-nav:                             1060;
-$zindex-close:                           1070;
+$zindex-fixed:                           1070;
 
 // Breakpoints
 $grid-breakpoints: (
@@ -126,6 +126,15 @@ $my-type-set: map-merge(
       "size": 20vw,
       "size-md": 18vw,
       "size-lg": 10vw,
+      "lh": 1,
+      "tt": uppercase
+    ),
+    "display-mega-small": (
+      "family": $font-family-sans-serif,
+      "weight": $font-weight-base,
+      "size": 8vw,
+      "size-md": 6vw,
+      "size-lg": 5vw,
       "lh": 1,
       "tt": uppercase
     ),
