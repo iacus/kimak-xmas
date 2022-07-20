@@ -4,7 +4,7 @@ $white:                       #FFFFFF;
 $indigo:                      #6610f2;
 $purple:                      #6f42c1;
 $pink:                        #e83e8c;
-$red:                         #FE1832;
+$red:                         #ED7360;
 $orange:                      #fd7e14;
 $cyan:                        #17a2b8;
 $gray-dark:                   #373a3c;
@@ -98,7 +98,7 @@ $my-type-set: map-merge(
     "text-04": (
       "family": $font-family-sans-serif,
       "weight": $font-weight-base,
-      "size": 1.5rem,
+      "size": 1.2rem,
       "size-lg": 1.25rem,
       "size-xxl": 1rem,
       "lh": 1.1,
@@ -123,7 +123,7 @@ $my-type-set: map-merge(
     "display-mega": (
       "family": $font-family-sans-serif,
       "weight": $font-weight-base,
-      "size": 20vw,
+      "size": 14vw,
       "size-md": 18vw,
       "size-lg": 10vw,
       "lh": 1,

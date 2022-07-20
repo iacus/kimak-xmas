@@ -4,7 +4,7 @@ eleventyNavigation:
   key: Home
 ---
 
-<div class="container-fluid- overflow-hidden" data-scroll-container>
+<div class="container-fluid" data-scroll-container>
 
   <section class="section section-gift relative" data-scroll-section data-scroll-section-id="section1">
       <div id="header" class="absolute"></div>
@@ -61,7 +61,12 @@ eleventyNavigation:
         </div>
         <div class="stripe -seven display-mega">
           <span class="stripe-inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="20" data-scroll-target="#direction">
-            Summmmmer Summmmmer
+            Summmmmmmer Summmmmmmer
+          </span>
+        </div>
+        <div class="stripe -seven display-mega">
+          <span class="stripe-inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="20" data-scroll-target="#direction">
+            Summmmmmmer Summmmmmmer
           </span>
         </div>
 
@@ -70,7 +75,7 @@ eleventyNavigation:
 
 
       <div class="playlist" data-scroll>
-        <iframe frameborder="0" src="{{meta.playlistEmbed}}" width="100%" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        {# <iframe frameborder="0" src="{{meta.playlistEmbed}}" width="100%" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> #}
         <p class="pt-3 text-center ">
 
           <a class="text-04 letter-motion call" target="_blank" rel="noreferrer" href="{{meta.playlistLink}}">Chill it on Spotify</a>
@@ -105,41 +110,45 @@ eleventyNavigation:
     </div>
   </section>
 
-  <section class="section footer" data-scroll-section>
-
-    <div class="footer-social text-center" data-scroll id="direction-3">
+  <section class="section section-share section--medium" data-scroll-section>
+    <div class="center text-center" data-scroll id="direction-3">
       <ul class="social-items">
         {% for item in nav.navSocial %}
+          {% if item.dataAction %}
             <li class="text-04 pb-1">
               <a class="letter-motion call" href="{{item.url}}" target="_blank"  rel="noreferrer">{{item.title}}</a>
             </li>
+          {% endif %}
         {% endfor %}
       </ul>
     </div>
-    <div class="footer-shapes" data-scroll>
-      <div class="footer-shape-item -two">
-        <span class="footer-shape-item-inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-5" data-scroll-target="#direction-3" data-scroll-delay="0.1">
+    <div class="triangles" data-scroll>
+      <div class="triangle -two">
+        <span class="triangle-inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-5" data-scroll-target="#direction-3" data-scroll-delay="0.1">
           <svg width="100%" height="100%" viewBox="0 0 437 436" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M218.5 0L224.552 170.592L272.839 6.86458L236.276 173.602L323.763 27.027L246.883 179.434L368.074 59.2204L255.707 187.72L402.986 101.422L262.193 197.94L426.306 150.98L265.933 209.452L436.569 204.78L266.693 221.532L433.13 259.443L264.425 233.422L416.205 311.533L259.271 244.374L386.857 357.777L251.556 253.701L346.931 395.27L241.763 260.816L298.935 421.656L230.509 265.271L245.885 435.277L218.5 266.789L191.115 435.277L206.491 265.271L138.065 421.656L195.237 260.816L90.0689 395.27L185.444 253.701L50.1429 357.777L177.729 244.374L20.7953 311.533L172.575 233.422L3.87024 259.443L170.307 221.532L0.431152 204.78L171.067 209.452L10.6942 150.98L174.807 197.94L34.0143 101.422L181.293 187.72L68.9265 59.2204L190.117 179.434L113.237 27.027L200.724 173.602L164.161 6.86458L212.448 170.592L218.5 0Z" class="bg-red"/>
+          <path d="M218.5 0L224.552 170.592L272.839 6.86458L236.276 173.602L323.763 27.027L246.883 179.434L368.074 59.2204L255.707 187.72L402.986 101.422L262.193 197.94L426.306 150.98L265.933 209.452L436.569 204.78L266.693 221.532L433.13 259.443L264.425 233.422L416.205 311.533L259.271 244.374L386.857 357.777L251.556 253.701L346.931 395.27L241.763 260.816L298.935 421.656L230.509 265.271L245.885 435.277L218.5 266.789L191.115 435.277L206.491 265.271L138.065 421.656L195.237 260.816L90.0689 395.27L185.444 253.701L50.1429 357.777L177.729 244.374L20.7953 311.533L172.575 233.422L3.87024 259.443L170.307 221.532L0.431152 204.78L171.067 209.452L10.6942 150.98L174.807 197.94L34.0143 101.422L181.293 187.72L68.9265 59.2204L190.117 179.434L113.237 27.027L200.724 173.602L164.161 6.86458L212.448 170.592L218.5 0Z" class="bg-triangle"/>
           </svg>
+
+
         </span>
       </div>
-      <div class="footer-shape-item -one">
-        <span class="footer-shape-item-inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" data-scroll-target="#direction-3" data-scroll-delay="0.6">
+      <div class="triangle -one">
+        <span class="triangle-inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" data-scroll-target="#direction-3" data-scroll-delay="0.6">
           <svg width="100%" height="100%" viewBox="0 0 437 436" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M218.5 0L224.552 170.592L272.839 6.86458L236.276 173.602L323.763 27.027L246.883 179.434L368.074 59.2204L255.707 187.72L402.986 101.422L262.193 197.94L426.306 150.98L265.933 209.452L436.569 204.78L266.693 221.532L433.13 259.443L264.425 233.422L416.205 311.533L259.271 244.374L386.857 357.777L251.556 253.701L346.931 395.27L241.763 260.816L298.935 421.656L230.509 265.271L245.885 435.277L218.5 266.789L191.115 435.277L206.491 265.271L138.065 421.656L195.237 260.816L90.0689 395.27L185.444 253.701L50.1429 357.777L177.729 244.374L20.7953 311.533L172.575 233.422L3.87024 259.443L170.307 221.532L0.431152 204.78L171.067 209.452L10.6942 150.98L174.807 197.94L34.0143 101.422L181.293 187.72L68.9265 59.2204L190.117 179.434L113.237 27.027L200.724 173.602L164.161 6.86458L212.448 170.592L218.5 0Z" class="bg-red"/>
+          <path d="M218.5 0L224.552 170.592L272.839 6.86458L236.276 173.602L323.763 27.027L246.883 179.434L368.074 59.2204L255.707 187.72L402.986 101.422L262.193 197.94L426.306 150.98L265.933 209.452L436.569 204.78L266.693 221.532L433.13 259.443L264.425 233.422L416.205 311.533L259.271 244.374L386.857 357.777L251.556 253.701L346.931 395.27L241.763 260.816L298.935 421.656L230.509 265.271L245.885 435.277L218.5 266.789L191.115 435.277L206.491 265.271L138.065 421.656L195.237 260.816L90.0689 395.27L185.444 253.701L50.1429 357.777L177.729 244.374L20.7953 311.533L172.575 233.422L3.87024 259.443L170.307 221.532L0.431152 204.78L171.067 209.452L10.6942 150.98L174.807 197.94L34.0143 101.422L181.293 187.72L68.9265 59.2204L190.117 179.434L113.237 27.027L200.724 173.602L164.161 6.86458L212.448 170.592L218.5 0Z" class="bg-triangle"/>
           </svg>
         </span>
       </div>
     </div>
-    <div class="footer-brand text-center " data-scroll>
+  </section>
+
+  <section class="section section-footer section--small">
+    <div class="center text-center" data-scroll>
       <p class="text-03 ">
         <a class="footer-logo letter-motion" href="https://www.kimak.com/" target="_blank" rel="noreferrer">KIMAK</a>
       </p>
     </div>
-
   </section>
-
 
 
 

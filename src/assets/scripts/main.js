@@ -15,24 +15,24 @@ const initFun = () => {
 }
 
 
-// function documentReady (fn) {
-//   if (document.readyState !== 'loading') {
-//     fn()
-//   } else if (document.addEventListener) {
-//     document.addEventListener('DOMContentLoaded', fn)
-//     console.log('Ready!')
-//   } else {
-//     document.attachEvent('onreadystatechange', function () {
-//       if (document.readyState !== 'loading') {
-//         fn()
-//       }
-//     })
-//   }
-// }
-// documentReady(initFun)
-
-if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
-  initFun();
-} else {
-  document.addEventListener('DOMContentLoaded', initFun);
+function documentReady (fn) {
+  if (document.readyState !== 'loading') {
+    fn()
+  } else if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', fn)
+    console.log('Ready!')
+  } else {
+    document.attachEvent('onreadystatechange', function () {
+      if (document.readyState !== 'loading') {
+        fn()
+      }
+    })
+  }
 }
+documentReady(initFun)
+
+// if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
+//   initFun();
+// } else {
+//   document.addEventListener('DOMContentLoaded', initFun);
+// }

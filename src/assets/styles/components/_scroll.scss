@@ -19,20 +19,58 @@ body.black-theme {
 }
 
 .section {
-  min-height: 150vh;
+  // min-height: 100vh;
   // background-color: blue;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.section-gift {
+
+}
+
 .section--high {
-  min-height: 125vh;
-  // background-color: yellow;
+  min-height: 100vh;
+  background-color: $red;
   @include center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .section--medium {
-  min-height: 75vh;
-  // background-color: pink;
+  height: 75vh;
+  // background-color: $red;
   @include center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.section-text {
+  position: absolute;
+}
+
+.footer {
+  height: 75vh;
+  background-color: $yellow;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &-inner {
+    @include center;
+  }
+}
+
+.footer-social {
+  margin-top: auto;
+  margin-bottom: auto;
+  z-index: 2;
+}
+.footer-brand {
+  margin-top: auto;
+  padding-bottom: 1rem;
 }
 
 .section--small {
@@ -109,4 +147,8 @@ iframe {
 
 .bg-triangle {
   fill: $yellow;
+}
+
+.bg-red {
+  fill: $red;
 }

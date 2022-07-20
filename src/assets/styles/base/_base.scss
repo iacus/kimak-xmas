@@ -41,7 +41,7 @@ html {
 body {
    font-family: $font-family-base;
    color: $primary;
-   background-color: $gray-light;
+   background-color: $yellow;
    line-height: $line-height-base;
    margin: 0;
    padding: 0;
@@ -123,4 +123,11 @@ button {
   outline: none;
   border: none;
   background-color: transparent;
+}
+
+.zIndex-2 {
+  z-index: 2;
+}
+.zIndex-1 {
+  z-index: 1;
 }

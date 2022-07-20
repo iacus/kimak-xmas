@@ -11,13 +11,13 @@
     }
 
     &.-one {
-      top: 10%;
+      top: 5%;
       // transform: translateX(300vw) rotate(15deg);
       transform: translateX(10vw) rotate(12deg);
       z-index: 6;
     }
     &.-two {
-      top: 5%;
+      top: 10%;
       transform: rotate(-15deg);
       z-index: -1;
       // transform: translateX(60%) rotate(9deg);
@@ -26,7 +26,7 @@
       }
     }
     &.-three {
-      top: 25%;
+      top: 20%;
       transform: translateX(-10vw) rotate(4deg);
 
       @include media-breakpoint-up (md) {
@@ -34,7 +34,7 @@
       }
     }
     &.-four {
-      top: 40%;
+      top: 30%;
       transform: translateX(-5vw) rotate(-7deg);
       z-index: 9;
 
@@ -47,26 +47,32 @@
       transform: translateX(5vw) rotate(-17deg);
 
       @include media-breakpoint-up (md) {
+        top: 50%;
         transform: translateX(20vw) rotate(-17deg);
       }
     }
     &.-six {
-      top: 55%;
+      top: 35%;
       transform: translateX(-10vw) rotate(3deg);
+
+      @include media-breakpoint-up (md) {
+        top: 55%;
+        transform: translateX(-10vw) rotate(3deg);
+      }
     }
     &.-seven {
-      top: 80%;
-      transform: translateX(-140vw) rotate(-3deg);
+      top: 30%;
+      transform: translateX(-100vw) rotate(-3deg);
       z-index: 4;
 
       @include media-breakpoint-up (md) {
         top: 80%;
-        transform: translateX(-100vw) rotate(-3deg);
+        transform: translateX(-70vw) rotate(-3deg);
       }
     }
     &.-eight {
-      top: 35%;
-      transform: translateX(-5vw) rotate(-17deg);
+      top: 5%;
+      transform: translateX(-8vw) rotate(-20deg);
       z-index: 10;
 
       @include media-breakpoint-up (md) {
@@ -74,8 +80,9 @@
       }
     }
     &.-nine {
-      top: 35%;
-      transform: translateX(-2vw) rotate(0);
+      top: 25%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-30%) rotate(0);
       z-index: 10;
 
       .stripe-inner {
@@ -90,7 +97,7 @@
 
       @include media-breakpoint-up (md) {
         top: 35%;
-        transform: translateX(15vw) rotate(0);
+        transform: translateX(-50%) rotate(0);
       }
 
     }
@@ -113,9 +120,11 @@
 
   &.-two {
     right: 0%;
-    bottom: 10%;
-    // transform: translateX(30vw);
+    top: 40%;
     z-index: 3;
+    @include media-breakpoint-up (md) {
+      bottom: 10%;
+    }
   }
 
   &.-three {
@@ -132,11 +141,64 @@
 
 .triangles {
   position: absolute;
-  width: 100%;
-  top: 10%;
+  z-index: 1;
+  top: 0;
+
+  @include media-breakpoint-up (md) {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+  }
 }
 
 .triangle {
+  white-space: nowrap;
+  position: absolute;
+
+
+  &-inner {
+    display: block;
+    width: 20rem;
+    height: 20rem;
+  }
+
+  &.-one {
+    top: 0%;
+    transform: translateX(-70vw) translateY(-10vw) rotate(16deg);
+    z-index: -1;
+
+    @include media-breakpoint-up (md) {
+        transform: translateX(-10vw) translateY(-10vw) rotate(16deg);
+
+    }
+
+  }
+
+  &.-two {
+    top: 4%;
+    transform: translateX(10vw) translateY(70vw) rotate(3deg);
+    z-index: -1;
+
+    @include media-breakpoint-up (md) {
+      top: 20%;
+      transform: translateX(80vw) translateY(0vw) rotate(3deg);
+
+    }
+  }
+}
+
+.footer-shapes {
+  position: absolute;
+  z-index: 1;
+
+  @include media-breakpoint-up (md) {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+  }
+}
+
+.footer-shape-item {
   white-space: nowrap;
   position: absolute;
 
@@ -148,15 +210,25 @@
 
   &.-one {
     top: 0%;
-    transform: translateX(-10vw) translateY(-10vw) rotate(16deg);
     z-index: -1;
+    transform: translateX(-15vw) translateY(0vw);
+
+    @include media-breakpoint-up (md) {
+      transform: translateX(-10vw) translateY(0vw);
+
+    }
 
   }
 
   &.-two {
     top: 20%;
-    transform: translateX(80vw) translateY(0vw) rotate(3deg);
+    transform: translateX(40vw) translateY(20vw);
     z-index: -1;
+
+    @include media-breakpoint-up (md) {
+      transform: translateX(60vw) translateY(20vw);
+
+    }
   }
 }
 
