@@ -62,7 +62,7 @@ export default class Single {
 
     setTimeout(() => {
       this.startVirtualScroll()
-      this.lockScroll()
+      // this.lockScroll()
     }, 1000);
 
   }

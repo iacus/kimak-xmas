@@ -49,6 +49,10 @@ body.black-theme {
 
 .section-text {
   position: absolute;
+
+  .call {
+    background-color: $yellow;
+  }
 }
 
 .footer {
@@ -97,7 +101,18 @@ iframe {
     padding-bottom: 0;
   }
 
-  iframe {
+  &-image {
+    border: .5rem solid $yellow;
+    transition: all 300ms ease-out;
+  }
+
+  &-image:hover {
+    border: .5rem solid $red;
+    transform: scale(1.05);
+  }
+
+
+  iframe,img {
     max-width: 320px;
 
     @include media-breakpoint-up (md) {
